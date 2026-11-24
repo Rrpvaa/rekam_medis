@@ -1,0 +1,247 @@
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5fb;
+    color: #263449;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #142b4a;
+    position: fixed;
+    padding: 28px 18px;
+    color: white;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.subjudul {
+    font-size: 12px;
+    color: #b8c8dd;
+    margin-bottom: 35px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #dce6f3;
+    padding: 14px;
+    border-radius: 9px;
+    margin-bottom: 8px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #2865b5;
+    color: white;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+header {
+    background: white;
+    padding: 22px 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header p {
+    color: #8290a3;
+    margin-top: 6px;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+    background: #2865b5;
+    color: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 28px;
+}
+
+.welcome p {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.card,
+.panel {
+    background: white;
+    padding: 25px;
+    border-radius: 13px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.card p {
+    color: #7d8999;
+}
+
+.card h1 {
+    margin-top: 15px;
+    color: #2865b5;
+    font-size: 32px;
+}
+
+.panel {
+    margin-top: 25px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-grid a {
+    text-decoration: none;
+    color: #2865b5;
+    background: #edf4ff;
+    padding: 20px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu-grid a:hover {
+    background: #dceaff;
+}
+
+
+/* =========================
+   IKON
+========================= */
+
+.sidebar a i {
+    width: 25px;
+    margin-right: 8px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.sidebar h2 i {
+    margin-right: 7px;
+    color: #8dbdff;
+}
+
+.btn i,
+button i,
+.tombol i {
+    margin-right: 6px;
+}
+
+.sidebar a:hover i {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   TOMBOL
+========================= */
+
+button,
+.tombol {
+    cursor: pointer;
+}
+
+button:hover,
+.tombol:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .subjudul {
+        margin-bottom: 15px;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 18px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .popup-notifikasi {
+        width: calc(100% - 30px);
+        right: 15px;
+        top: 15px;
+    }
+}
